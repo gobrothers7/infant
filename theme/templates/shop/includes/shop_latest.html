@@ -1,0 +1,49 @@
+{% load shop_tags mezzanine_tags staticfiles i18n %}
+
+<div class="row featuredPostContainer style2 globalPadding">
+    <h3 class="section-title style2 text-center"><span>Популярні товари</span></h3>
+    <div id="productslider" class="owl-carousel owl-theme">
+    {% for product in products %}
+        <div class="item">
+            <div class="product">
+
+               <div class="image">
+               <div class="quickview">
+                  <!--<a title="Quick View" class="btn btn-xs btn-quickview" data-target="#product-details-modal" data-toggle="modal"> <i class="fa fa-lg fa-eye"></i> Preview</a>-->
+               </div>
+                  <a href="{{ product.get_absolute_url }}">
+                    {% if product.image %}
+                      <img src="{% static "media/" %}{% thumbnail product.image 285 380 %}">
+                    {% else %}
+                      <div class="placeholder"></div>
+                    {% endif %}
+                  </a>
+                </div>
+
+                <div class="description">
+                    <h4><a href="{{ product.get_absolute_url }}">{{ product }}</a></h4>
+                    <div class="grid-description">
+                      {{ product.description }}
+                    </div>
+                    <div class="list-description">
+                      <p>{{ product.content }}</p>
+                    </div>
+                </div>
+
+                {% if product.has_price %}
+                    {% if product.on_sale %}
+                    <div class="old-price"><span>{{ product.unit_price|currency}}</span></div>
+                    {% trans "On sale:" %}
+                    {% endif %}
+                    <div class="price"><span>{{ product.price|currency }}</span></div>
+                {% else %}
+                    <div class="coming-soon"><span>{% trans "Coming soon" %}</span></div>
+                {% endif %}
+
+                <!--<i class="glyphicon glyphicon-shopping-cart"> </i> {% trans "Buy" %}-->
+
+            </div><!--./product-->
+        </div><!--./item col- -->
+    {% endfor %}
+    </div><!--./productslider-->
+</div><!--./row-->

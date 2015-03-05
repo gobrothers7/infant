@@ -1,0 +1,38 @@
+{% load i18n future pages_tags %}
+
+{% spaceless %}
+{% if page_branch_in_menu %}
+
+{% for page in page_branch %}
+  {% if not has_home and page.is_primary and forloop.first %}
+  <li class="{% if on_home %} active{% endif %}">
+    <a href="{% url "home" %}" class="text-uppercase">{% trans "Home" %}</a>
+  </li>
+  {% endif %}
+{% if page.in_menu %}
+{% if page.status == 2 %}
+{% if page.has_children_in_menu %}
+  <li class="dropdown-tree {% if page.is_current_or_ascendant %} open-tree active{% endif %}">
+    <a href="{{ page.get_absolute_url }}" class="dropdown-tree-a
+      {% if page.is_primary %} text-uppercase{% endif %}">
+      {{ page.title }}
+    </a>
+    <ul class="dropdown-menu-tree category-level-2">
+      {% page_menu page %}
+    </ul>
+  </li>
+{% else %}
+    <li class="{%if page.is_current %} active{% endif %}">
+        <a class="{%if page.is_current %} active{% endif %}
+          {% if page.is_primary %} text-uppercase{% endif %}"
+          href="{{ page.get_absolute_url }}">
+          {{ page.title }}
+        </a>
+    </li>
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% endif %}
+{% endspaceless %}

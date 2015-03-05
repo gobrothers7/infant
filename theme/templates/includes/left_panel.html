@@ -1,0 +1,49 @@
+{% load i18n future pages_tags shop_tags %}
+     <div class="panel-group" id="accordionNo">
+          <!--Category-->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapseCategory" class="collapseWill">
+                    <span class="pull-left"><i class="fa fa-caret-right"></i> </span>
+                    Каталог
+                </a>
+            </h4>
+            </div>
+            <div id="collapseCategory" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul class="nav nav-pills nav-stacked tree">
+
+                {% if page.content_model == 'category' %}
+                  {% page_menu "pages/menus/tree.html" %}
+                {% else %}
+                  {% page_menu "pages/menus/tree.html" %}
+                {% endif %}
+
+                </ul>
+              </div>
+            </div>
+          </div> <!--/panel-default-->
+     </div> <!--/panel-group-->
+
+      {% for option in options_all %}
+      <div class="panel-group" id="accordionNo">
+          <!--Category-->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            <h4 class="panel-title">
+                <!--<a data-toggle="collapse" href="#collapseCategory" class="collapseWill">-->
+                    <span class="pull-left"></span>
+                    {% get_item options_types option as item%}
+                    {% trans item %}
+                <!--</a>-->
+            </h4>
+            </div>
+            <div id="collapseBrand" class="panel-collapse <!--collapse--> in">
+              <div class="panel-body smoothscroll ">
+                {% option_items option options_all %}
+              </div>
+            </div>
+          </div> <!--/panel-default-->
+      </div> <!--/panel-group-->
+      {% endfor %}

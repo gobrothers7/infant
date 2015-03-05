@@ -1,0 +1,1749 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Oleg Feschuk <gobrothers@ukr.net>, 2015.
+#   <gobrothers@ukr.net>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cartridge\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-30 10:40-0430\n"
+"PO-Revision-Date: 2012-11-17 18:05-0430\n"
+"Last-Translator: Sebastián Ramírez Magrí <sebasmagri@gmail.com>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/projects/p/cartridge/"
+"language/ru/)\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: admin.py:27
+msgid "This field is required if status is set to published."
+msgstr "Це поле обов'язково, якщо встановлено опублікований статус."
+
+#: admin.py:47
+msgid "Meta data"
+msgstr "Мета дані"
+
+#: defaults.py:21
+msgid "Controls the ordering and grouping of the admin menu."
+msgstr "Порядок і групування відображення елементів адміністративного меню"
+
+#: defaults.py:24 models.py:275
+msgid "Content"
+msgstr "Контент"
+
+#: defaults.py:25
+msgid "Media Library"
+msgstr "Медіа Бібліотека"
+
+#: defaults.py:26 templates/admin/login.html:43
+msgid "Site"
+msgstr "Сайт"
+
+#: defaults.py:27
+msgid "Users"
+msgstr "Користувачі"
+
+#: defaults.py:33
+msgid "Unregister these models from the admin."
+msgstr "Прибрати ці моделі з адміністрування."
+
+#: defaults.py:40
+msgid "Size of thumbnail previews for image fields in the admin interface."
+msgstr "Розмір мініатюри для  полів зображень в інтерфейсі адміністрування."
+
+#: defaults.py:48
+msgid "Akismet API Key"
+msgstr "Ключ Akismet"
+
+#: defaults.py:49
+msgid ""
+"Key for http://akismet.com spam filtering service. Used for filtering "
+"comments and forms."
+msgstr ""
+"Ключ для сервісу фільтрації спаму http://akismet.com. Для коментарів і форм."
+
+#: defaults.py:57
+msgid "bit.ly access token"
+msgstr "bit.ly токен доступу"
+
+#: defaults.py:58
+msgid "Access token for http://bit.ly URL shortening service."
+msgstr "Токен доступу для http://bit.ly."
+
+#: defaults.py:65
+msgid ""
+"Mezzanine's caching uses a technique know as mint caching. This is where the "
+"requested expiry for a cache entry is stored with the cache entry in cache, "
+"and the real expiry used has the ``CACHE_SET_DELAY`` added to it. Then on a "
+"cache get, the store expiry is checked, and if it has past, the cache entry "
+"is set again, and no entry is returned. This tries to ensure that cache "
+"misses never occur, and if many clients were to get a cache miss at once, "
+"only one would actually need to re-generated the cache entry."
+msgstr ""
+
+#: defaults.py:93
+msgid ""
+"A three item sequence, each containing a sequence of template tags used to "
+"render the admin dashboard."
+msgstr ""
+"Послідовності з трьома значеннями, кожна з яких містить послідовність тегів "
+"шаблону використовується для відображення панелі адміністратрування."
+
+#: defaults.py:101
+msgid "Device specific template sub-directory to use as the default device."
+msgstr "Папка шаблону за замовчуванням для мобільних пристроїв."
+
+#: defaults.py:109
+msgid ""
+"Mapping of device specific template sub-directory names to the sequence of "
+"strings that may be found in their user agents."
+msgstr "Відповідність різних моделей мобільних пристроїв з шаблонами."
+
+#: defaults.py:131
+msgid "If ``True``, website forms will use HTML5 features."
+msgstr ""
+"Якщо `` Так ``, форми на сайті будуть використовувати можливості HTML5."
+
+#: defaults.py:138
+msgid ""
+"A sequence of fields that will be injected into Mezzanine's (or any "
+"library's) models. Each item in the sequence is a four item sequence. The "
+"first two items are the dotted path to the model and its field name to be "
+"added, and the dotted path to the field class to use for the field. The "
+"third and fourth items are a sequence of positional args and a dictionary of "
+"keyword args, to use when creating the field instance. When specifying the "
+"field class, the path ``django.models.db.`` can be omitted for regular "
+"Django model fields."
+msgstr ""
+
+#: defaults.py:153
+msgid "Google Analytics ID"
+msgstr "Google Analytics ID"
+
+#: defaults.py:155
+msgid "Google Analytics ID (http://www.google.com/analytics/)"
+msgstr "Google Analytics ID (http://www.google.com/analytics/)"
+
+#: defaults.py:161
+msgid ""
+"A sequence mapping host names to themes, allowing different templates to be "
+"served per HTTP hosts Each item in the sequence is a two item sequence, "
+"containing a host such as ``othersite.example.com``, and the name of an "
+"importable Python package for the theme. If the host is matched for a "
+"request, the templates directory inside the theme package will be first "
+"searched when loading templates."
+msgstr ""
+
+#: defaults.py:175
+msgid "Name of the jQuery file."
+msgstr "Ім'я jQuery файлу."
+
+#: defaults.py:176
+msgid "Name of the jQuery file found in mezzanine/core/static/mezzanine/js/"
+msgstr "Ім'я jQuery файлу знаходиться в mezzanine/core/static/mezzanine/js/"
+
+#: defaults.py:184
+msgid "Name of the jQuery UI file."
+msgstr "Назва файлу для JQuery UI."
+
+#: defaults.py:185
+msgid "Name of the jQuery UI file found in mezzanine/core/static/mezzanine/js/"
+msgstr ""
+"Назва файлу JQuery UI, якого можна знайти в mezzanine/core/static/mezzanine/"
+"js/"
+
+#: defaults.py:193
+msgid "Max paging links"
+msgstr "Максимальна кількість посилань в пагінаторе"
+
+#: defaults.py:194
+msgid "Max number of paging links to display when paginating."
+msgstr ""
+"Максимальна кількість посилань на сторінки, які відображаються в області "
+"пагінації."
+
+#: defaults.py:201
+msgid "Media library per site"
+msgstr "Окрема медіа-бібліотека для кожного із сайтів"
+
+#: defaults.py:202
+msgid ""
+"If ``True``, each site will use its own directory within the filebrowser "
+"media library."
+msgstr ""
+"Якщо `` Так ``, кожен сайт буде використовувати свій власний каталог для "
+"медіа-бібліотеки."
+
+#: defaults.py:210
+msgid ""
+"Models that subclass ``Ownable`` and use the ``OwnableAdmin`` have their "
+"admin change-list records filtered down to records owned by the current "
+"user. This setting contains a sequence of models in the format ``app_label."
+"object_name``, that when subclassing ``Ownable``, will still show all "
+"records in the admin change-list interface, regardless of the current user."
+msgstr ""
+
+#: defaults.py:222
+msgid ""
+"Dotted package path and class name of the widget to use for the "
+"``RichTextField``."
+msgstr ""
+"Розділений точками шлях до пакету та ім'я класу віджета, який "
+"використовується для відображення віджета `` RichTextField ``."
+
+#: defaults.py:230
+msgid ""
+"List of HTML tags that won't be stripped from ``RichTextField`` instances."
+msgstr ""
+"Список HTML тегів що не будуть видалені при редагуванні в текстовому "
+"редакторі."
+
+#: defaults.py:246
+msgid ""
+"List of HTML attributes that won't be stripped from ``RichTextField`` "
+"instances."
+msgstr ""
+"Список HTML атрибутів, що не будуть видалені при редагувані в текстовому "
+"редакторі."
+
+#: defaults.py:264
+msgid ""
+"List of inline CSS styles that won't be stripped from ``RichTextField`` "
+"instances."
+msgstr ""
+"Список вбудованих стилів CSS, які не будуть вирізані з `` RichTextField  ``."
+
+#: defaults.py:272
+msgid ""
+"Dotted path to the function to call on a ``RichTextField`` value before it "
+"is rendered to the template."
+msgstr ""
+"Розділений точками шлях до функції, перетворюючої значення `` RichTextField "
+"``, при відображенні в шаблоні."
+
+#: defaults.py:282
+msgid "High"
+msgstr "Високий"
+
+#: defaults.py:283
+msgid "Low (allows video, iframe, Flash, etc)"
+msgstr "Низький (дозволяти відео, флеш, iframe та ін.)"
+
+#: defaults.py:284
+msgid "No filtering"
+msgstr "Без фільтрації"
+
+#: defaults.py:289
+msgid "Rich Text filter level"
+msgstr "Рівень фільтрації тексту"
+
+#: defaults.py:290
+msgid ""
+"*Do not change this setting unless you know what you're doing.*\n"
+"\n"
+"When content is saved in a Rich Text (WYSIWYG) field, unsafe HTML tags and "
+"attributes are stripped from the content to protect against staff members "
+"intentionally adding code that could be used to cause problems, such as "
+"changing their account to a super-user with full access to the system.\n"
+"\n"
+"This setting allows you to change the level of filtering that occurs. "
+"Setting it to low will allow certain extra tags to be permitted, such as "
+"those required for embedding video. While these tags are not the main "
+"candidates for users adding malicious code, they are still considered "
+"dangerous and could potentially be mis-used by a particularly technical "
+"user, and so are filtered out when the filtering level is set to high.\n"
+"\n"
+"Setting the filtering level to no filtering, will disable all filtering, and "
+"allow any code to be entered by staff members, including script tags."
+msgstr ""
+"* Не змінюйте цей параметр, якщо ви не знаєте що він робите. *\n"
+"\n"
+"Коли вміст Rich Text (WYSIWYG) поля зберігається в базу, небезпечні HTML "
+"теги і атрибути виключаються з тексту для захисту від навмисного додавання "
+"редакторами сайту коду, який може привести до зміни типу їх облікового "
+"запису на супер-користувача з повним доступом до системи.\n"
+"\n"
+"Цей параметр дозволяє змінити рівень фільтрації HTML тегів. Установка "
+"параметра в `` Низький `` дозволяє додавати деякі додаткові теги, які "
+"потрібні для вставки відео. Хоча вони і не є небезпечними, все ж можуть бути "
+"побічно використані технічно грамотними користувачами. Тому навіть ці теги "
+"фільтруються, якщо виставлений `` Високий `` рівень фільтрації.\n"
+"\n"
+"Установка параметра в стан `` Без фільтра `` відключає фільтрацію, що "
+"дозволяє редакторам сайт додавати будь-який HTML код, включаючи скриптові "
+"теги."
+
+#: defaults.py:313
+msgid ""
+"Sequence of models that will be provided by default as choices in the search "
+"form. Each model should be in the format ``app_label.model_name``. Only "
+"models that subclass ``mezzanine.core.models.Displayable`` should be used."
+msgstr ""
+
+#: defaults.py:323
+msgid "Search results per page"
+msgstr "Результатів пошуку на сторінці"
+
+#: defaults.py:324
+msgid "Number of results shown in the search results page."
+msgstr "Кількість результатів, які відображатимуться на сторінці пошуку."
+
+#: defaults.py:331
+msgid ""
+"A URL prefix for mounting all of Mezzanine's urlpatterns under. When using "
+"this, you'll also need to manually apply it to your project's root ``urls."
+"py`` module. The root ``urls.py`` module provided by Mezzanine's ``mezzanine-"
+"project`` command contains an example of this towards its end."
+msgstr ""
+
+#: defaults.py:342
+msgid "Site Title"
+msgstr "Заголовок сайту"
+
+#: defaults.py:343
+msgid ""
+"Title that will display at the top of the site, and be appended to the "
+"content of the HTML title tags on every page."
+msgstr ""
+"заголовок, що відображається як назва вкладки браузера або назва вікна "
+"браузера, складається з заголовка відображуваної сторінки з додаванням даної "
+"частини."
+
+#: defaults.py:351
+msgid "Tagline"
+msgstr "Підзаголовок"
+
+#: defaults.py:352
+msgid "A tag line that will appear at the top of all pages."
+msgstr "Підзаголовок, який відображається на всіх сторінках сайту."
+
+#: defaults.py:354
+msgid "An open source content management platform."
+msgstr "Платформа з управління контентом з відкритим вихідним кодом."
+
+#: defaults.py:359
+msgid ""
+"Dotted Python path to the callable for converting strings into URL slugs. "
+"Defaults to ``mezzanine.utils.urls.slugify_unicode`` which allows for non-"
+"ascii URLS. Change to ``django.template.defaultfilters.slugify`` to use "
+"Django's slugify function, or something of your own if required."
+msgstr ""
+"Розділений точками шлях до функції, що перетворює стрічки відносний шлях. За "
+"замовчуванням `` mezzanine.utils.urls.slugify_unicode ``,  яка дозволяє "
+"використовувати не-ASCII символи в посиланні. Можлива зміна на `` django."
+"template.defaultfilters.slugify `` або на власну функцію перетворення."
+
+#: defaults.py:370
+msgid ""
+"Sequence of dotted Python paths to callable functions used for checking "
+"posted content (such as forms or comments) is spam. Each function should "
+"accept three arguments: the request object, the form object, and the URL "
+"that was posted from. Defaults to ``mezzanine.utils.views.is_spam_akismet`` "
+"which will use the http://akismet.com spam filtering service when the "
+"``AKISMET_API_KEY`` setting is configured."
+msgstr ""
+
+#: defaults.py:383
+msgid "Enable SSL"
+msgstr "Включити SSL"
+
+#: defaults.py:384
+msgid ""
+"If ``True``, users will be automatically redirected to HTTPS for the URLs "
+"specified by the ``SSL_FORCE_URL_PREFIXES`` setting."
+msgstr ""
+"Якщо `` Так ``, то користувачі будуть автоматично перенаправлені на HTTPS "
+"для посилань, які вказані в налаштуванні `` SSL_FORCE_URL_PREFIXES ``."
+
+#: defaults.py:393
+msgid "Force Host"
+msgstr "Встановити хост"
+
+#: defaults.py:394
+msgid ""
+"Host name that the site should always be accessed via that matches the SSL "
+"certificate."
+msgstr "Ім'я хоста, яке сайт буде використовувати для SSL-сертифіката."
+
+#: defaults.py:412
+msgid ""
+"If ``True``, only URLs specified by the ``SSL_FORCE_URL_PREFIXES`` setting "
+"will be accessible over SSL, and all other URLs will be redirected back to "
+"HTTP if accessed over HTTPS."
+msgstr ""
+"Якщо `` Так `` , тільки посилання зазначені в налаштуванні `` "
+"SSL_FORCE_URL_PREFIXES ``  будуть доступні через SSL, всі інші посилання "
+"будуть перенаправлені до HTTP, якщо доступ до них був через HTTPS."
+
+#: defaults.py:422
+msgid "List of words which will be stripped from search queries."
+msgstr "Список слів, що виключаються з пошукових запитів"
+
+#: defaults.py:479
+msgid "Tag Cloud Sizes"
+msgstr "Розміри хмари тегів"
+
+#: defaults.py:480
+msgid "Number of different sizes for tags when shown as a cloud."
+msgstr ""
+"Кількість різноманітних розмірів написів, які відображаються в хмарі тегів."
+
+#: defaults.py:487
+msgid "Sequence of setting names available within templates."
+msgstr "Список налаштувань, доступних всередині шаблонів"
+
+#: defaults.py:502
+msgid ""
+"Directory name to store thumbnails in, that will be created relative to the "
+"original image's directory."
+msgstr ""
+"Назва папки, в якій зберігати іскізи. Папка буде створена відносно основної "
+"папки з зображеннями."
+
+#: defaults.py:510
+msgid ""
+"URL for the JavaScript file (relative to ``STATIC_URL``) that handles "
+"configuring TinyMCE when the default ``RICHTEXT_WIDGET_CLASS`` is used."
+msgstr ""
+"Посилання для файлу JavaScript (відносно `` STATIC_URL ``), який обробляє "
+"налаштування TinyMCE, коли за замовчуванням використовується `` "
+"RICHTEXT_WIDGET_CLASS ``."
+
+#: defaults.py:519
+msgid ""
+"Dict mapping file field names in the format ``app_label.model_name."
+"field_name`` to the Python dotted path to function names that will be used "
+"for the file field's ``upload_to`` argument."
+msgstr ""
+
+#: defaults.py:535
+msgid ""
+"If ``True``, the south application will be automatically added to the "
+"``INSTALLED_APPS`` setting."
+msgstr ""
+"Якщо `` Так ``, то South буде автоматично додано до списку додатків `` "
+"INSTALLED_APPS ``."
+
+#: fields.py:37
+#, python-format
+msgid "Could not import the value of settings.RICHTEXT_WIDGET_CLASS: %s"
+msgstr "Не вдалось імпортувати значення налаштувань.HTML_WIDGET_CLASS: %s"
+
+#: forms.py:84 models.py:317
+msgid "Order"
+msgstr "Порядок"
+
+#: models.py:56 models.py:110
+msgid "Title"
+msgstr "Заголовок"
+
+#: models.py:57
+msgid "URL"
+msgstr "URL"
+
+#: models.py:58
+msgid "Leave blank to have the URL auto-generated from the title."
+msgstr ""
+"Якщо залишите порожнім, то це поле автоматично заповниться із заголовку."
+
+#: models.py:100
+msgid "View on site"
+msgstr "Переглянути в сайті"
+
+#: models.py:112
+msgid ""
+"Optional title to be used in the HTML title tag. If left blank, the main "
+"title field will be used."
+msgstr ""
+"Необов'язковий заголовок для використання в титульному тезі сторінки. Якщо "
+"залишите порожнім, то буде використаний головний заголовок."
+
+#: models.py:114
+msgid "Description"
+msgstr "Опис"
+
+#: models.py:115
+msgid "Generate description"
+msgstr "Згенерувати опис"
+
+#: models.py:116
+msgid ""
+"If checked, the description will be automatically generated from content. "
+"Uncheck if you want to manually set a custom description."
+msgstr ""
+"Якщо прапорець встановлений, опис буде автоматично генерується із контенту. "
+"Зніміть прапорець, якщо ви хочете вручну встановити опис."
+
+#: models.py:119
+msgid "Keywords"
+msgstr "Ключові слова"
+
+#: models.py:176
+msgid "Draft"
+msgstr "Чернетка"
+
+#: models.py:177
+msgid "Published"
+msgstr "Опублікований"
+
+#: models.py:188
+msgid "Status"
+msgstr "Статус"
+
+#: models.py:190
+msgid "With Draft chosen, will only be shown for admin users on the site."
+msgstr "Якщо обрано Чернетка, то буде показано тільки адміністраторам."
+
+#: models.py:192 models.py:225
+msgid "Published from"
+msgstr "Опублікований з"
+
+#: models.py:193
+msgid "With Published chosen, won't be shown until this time"
+msgstr "Якщо обрано ``Опубліковано``, то не буде показано до цього часу"
+
+#: models.py:195
+msgid "Expires on"
+msgstr "Завершується"
+
+#: models.py:196
+msgid "With Published chosen, won't be shown after this time"
+msgstr "Якщо обрано ``Опубліковано``, то буде показано після цього часу"
+
+#: models.py:199
+msgid "Show in sitemap"
+msgstr "Показати в сайтмапі"
+
+#: models.py:402 models.py:422
+msgid "Author"
+msgstr "Автор"
+
+#: models.py:425
+msgid "Sites"
+msgstr "Сайти"
+
+#: models.py:428
+msgid "Site permission"
+msgstr "Права сайту"
+
+#: models.py:429
+msgid "Site permissions"
+msgstr "Права сайту"
+
+#: views.py:87
+msgid "Permission denied"
+msgstr "Доступ заборонено"
+
+#: views.py:115 templates/includes/search_form.html:11
+msgid "Everything"
+msgstr "Усі"
+
+#: templates/base.html:121
+msgid "Powered by"
+msgstr "Сайт використовує"
+
+#: templates/base.html:124
+msgid "and"
+msgstr "і"
+
+#: templates/base.html:127
+msgid "Theme by"
+msgstr "Тема"
+
+#: templates/base.html:130
+msgid "View Mobile Site"
+msgstr "Мобільна версія"
+
+#: templates/index.html:4 templates/index.html.py:5 templates/index.html:8
+#: templates/search_results.html:10 templates/admin/index.html:15
+msgid "Home"
+msgstr "Головна"
+
+#: templates/index.html:12
+msgid ""
+"\n"
+"<h2>Congratulations!</h2>\n"
+"<p>\n"
+"    Welcome to your new Mezzanine powered website.\n"
+"    Here are some quick links to get you started:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"/admin/\">Log in to the admin interface</a></li>\n"
+"    <li><a href=\"http://mezzanine.jupo.org/docs/content-architecture.html"
+"\">Creating custom page types</a></li>\n"
+"    <li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions."
+"html#templates\">Modifying HTML templates</a></li>\n"
+"    <li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions."
+"html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin"
+"\">Changing this homepage</a></li>\n"
+"    <li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions."
+"html\">Other frequently asked questions</a></li>\n"
+"    <li><a href=\"http://mezzanine.jupo.org/docs/configuration.html#default-"
+"settings\">Full list of settings</a></li>\n"
+"    <li><a href=\"http://mezzanine.jupo.org/docs/deployment.html\">Deploying "
+"to a production server</a></li>\n"
+"</ul>\n"
+msgstr ""
+"\n"
+"<h2>Вітаємо!</h2>\n"
+"<p>\n"
+"Ласкаво просимо на новостворений веб-сайт, створений з допомогою Mezzanine."
+"⏎\n"
+"Ось деякі швидкі посилання, щоб ви почали:\n"
+"</p>\n"
+"<ul>\n"
+"<li><a href=\"/admin/\">Вхід в інтерфейс адміністратора</a></li>\n"
+"<li><a href=\"http://mezzanine.jupo.org/docs/content-architecture.html"
+"\">Створення  користувацьких типів сторінок</a></li>\n"
+"<li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions."
+"html#templates\">Зміна HTML шаблонів</a></li>\n"
+"<li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions."
+"html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin\">Зміна "
+"цієї стартовою сторінки</a></li>\n"
+"<li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions.html"
+"\">Інші часті  питання</a></li>\n"
+"<li><a href=\"http://mezzanine.jupo.org/docs/configuration.html#default-"
+"settings\">Повний перелік налаштувань</a></li>\n"
+"<li><a href=\"http://mezzanine.jupo.org/docs/deployment.html\">Розгортання "
+"на робочому сервері</a></li>\n"
+"</ul>\n"
+
+#: templates/search_results.html:5 templates/search_results.html.py:6
+#: templates/search_results.html:13
+msgid "Search Results"
+msgstr "Результати пошуку"
+
+#: templates/search_results.html:20
+#, python-format
+msgid ""
+"\n"
+"No results were found in %(search_type)s matching your query: %(query)s\n"
+msgstr ""
+"\n"
+"Нічого не знайдено в %(search_type)s із запитои: %(query)s\n"
+
+#: templates/search_results.html:24
+#, python-format
+msgid ""
+"\n"
+"Showing %(start)s to %(end)s of %(total)s results in %(search_type)s "
+"matching your query: %(query)s\n"
+msgstr ""
+"\n"
+"Відображаються від %(start)s до %(end)s із %(total)s резульматів в "
+"%(search_type)s із запитом: %(query)s\n"
+
+#: templates/search_results.html:35
+msgid "read more"
+msgstr "читати далі"
+
+#: templates/admin/base_site.html:34
+msgid "View site"
+msgstr "Переглянути на сайті"
+
+#: templates/admin/index.html:17 templates/admin/includes/dropdown_menu.html:4
+msgid "Dashboard"
+msgstr "Панель управління"
+
+#: templates/admin/login.html:21
+msgid "You don't have permission to access the admin for this site."
+msgstr "У вас немає прав на адміністрування цього сайту."
+
+#: templates/admin/login.html:28
+msgid "Username or email:"
+msgstr "Логін або email:"
+
+#: templates/admin/login.html:32
+msgid "Password:"
+msgstr "Пароль:"
+
+#: templates/admin/login.html:37
+msgid "Interface:"
+msgstr "Інтерфейс:"
+
+#: templates/admin/login.html:40 templates/includes/editable_toolbar.html:7
+#: templates/includes/editable_toolbar.html:9
+msgid "Admin"
+msgstr "Адміністрування"
+
+#: templates/admin/login.html:47
+msgid "Log in"
+msgstr "Зайти"
+
+#: templates/admin/login.html:50
+msgid "Forgot password?"
+msgstr "Забули пароль?"
+
+#: templates/admin/includes/app_list.html:20
+msgid "Add"
+msgstr "Додати"
+
+#: templates/admin/includes/app_list.html:27
+msgid "Change"
+msgstr "Змінити"
+
+#: templates/admin/includes/dynamic_inline_stacked.html:6
+#: templates/admin/includes/dynamic_inline_tabular.html:6
+msgid "Add another"
+msgstr "Додати ще"
+
+#: templates/admin/includes/recent_actions.html:4
+msgid "Recent Actions"
+msgstr "Останні дії"
+
+#: templates/admin/includes/recent_actions.html:5
+msgid "My Actions"
+msgstr "Мої дії"
+
+#: templates/admin/includes/recent_actions.html:9
+msgid "None available"
+msgstr "Недоступно"
+
+#: templates/errors/404.html:6
+msgid "Page not found"
+msgstr "Сторінку не знайдено"
+
+#: templates/errors/404.html:10
+msgid "The page you requested does not exist."
+msgstr "Сторінка, яку ви запросили, не існує."
+
+#: templates/errors/500.html:6
+msgid "Error"
+msgstr "Помилка"
+
+#: templates/errors/500.html:10
+msgid "Sorry, an error occurred."
+msgstr "На жаль, сталася помилка."
+
+#: templates/includes/editable_form.html:16
+msgid "Save"
+msgstr "Зберегти"
+
+#: templates/includes/editable_form.html:17
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: templates/includes/editable_form.html:25
+msgid "Edit"
+msgstr "Редагувати"
+
+#: templates/includes/editable_toolbar.html:11
+msgid "Log out"
+msgstr "Вийти"
+
+#: templates/includes/pagination.html:8
+msgid "Page"
+msgstr "Сторінка"
+
+#: templates/includes/pagination.html:8
+msgid "of"
+msgstr "з"
+
+#: templates/includes/search_form.html:4
+msgid "Search"
+msgstr "Пошук"
+
+#: templates/includes/search_form.html:22
+msgid "Go"
+msgstr "Перейти"
+
+#: admin.py:63
+msgid "Product filters"
+msgstr "Фильтры товаров"
+
+#: admin.py:100
+msgid "Current variations"
+msgstr "Текущие вариации"
+
+#: admin.py:122
+msgid "Other products"
+msgstr "Другие товары"
+
+#: admin.py:134
+msgid "Create new variations"
+msgstr "Создать новые вариации"
+
+#: admin.py:244
+msgid "Items"
+msgstr "Товары"
+
+#: admin.py:264
+msgid "Billing details"
+msgstr "Платежная информация"
+
+#: admin.py:265
+msgid "Shipping details"
+msgstr "Информация о доставке"
+
+#: admin.py:283 admin.py:303
+msgid "Apply to product and/or products in categories"
+msgstr "Применить к товарам и/или товарам в категориях"
+
+#: admin.py:285 admin.py:305
+msgid "Reduce unit price by"
+msgstr "Уменьшить цену на"
+
+#: admin.py:288
+msgid "Sale period"
+msgstr "Период распродажи"
+
+#: admin.py:308
+msgid "Valid for"
+msgstr "Действительно для"
+
+#: checkout.py:40
+msgid "Flat rate shipping"
+msgstr "Вартість доставки"
+
+#: checkout.py:55 templates/shop/includes/order_totals.html:34
+#: templates/shop/includes/order_totals.txt:8
+msgid "Tax"
+msgstr ""
+
+#: checkout.py:184
+msgid "Details"
+msgstr "Деталі"
+
+#: checkout.py:188
+msgid "Address"
+msgstr "Адреса"
+
+#: checkout.py:191
+msgid "Payment"
+msgstr "Оплата"
+
+#: checkout.py:195
+msgid "Confirmation"
+msgstr "Підтвердження"
+
+#: defaults.py:22
+msgid "Shop"
+msgstr "Магазин"
+
+#: defaults.py:88
+msgid "Enable featured images in shop categories"
+msgstr "Дозволити зображення(аватар) для категорії магазину"
+
+#: defaults.py:95
+msgid "Checkout account required"
+msgstr ""
+
+#: defaults.py:96
+msgid "If True, users must create a login for the checkout process."
+msgstr ""
+
+#: defaults.py:127
+msgid "Payment Enabled"
+msgstr ""
+
+#: defaults.py:128
+msgid "If False, there is no payment step on the checkout process."
+msgstr ""
+
+#: defaults.py:136
+msgid "Currency Locale"
+msgstr ""
+
+#: defaults.py:146
+msgid "Default Shipping Cost"
+msgstr "Вартість доставки"
+
+#: defaults.py:147
+msgid "Default cost of shipping when no custom shipping is implemented."
+msgstr ""
+
+#: defaults.py:155
+msgid "Discount in Cart"
+msgstr "Сума знижки"
+
+#: defaults.py:156
+msgid "Discount codes can be entered on the cart page."
+msgstr "Код зкижки може бути введений на сторінці корзини."
+
+#: defaults.py:163
+msgid "Discount in Checkout"
+msgstr ""
+
+#: defaults.py:164
+msgid "Discount codes can be entered on the first checkout step."
+msgstr "Код знижки може бути введений на першому кроці оплати."
+
+#: defaults.py:171
+msgid "Billing & Shipping Handler"
+msgstr ""
+
+#: defaults.py:182
+msgid "Tax Handler"
+msgstr ""
+
+#: defaults.py:193
+msgid "Order Handler"
+msgstr ""
+
+#: defaults.py:204
+msgid "Payment Handler"
+msgstr ""
+
+#: defaults.py:218
+msgid "Size"
+msgstr "Розмір"
+msgid "Small"
+msgstr "Маленький"
+msgid "Medium"
+msgstr "Середній"
+msgid "Large"
+msgstr "Великий"
+
+#: defaults.py:219
+msgid "Colour"
+msgstr "Колір"
+msgid "Red"
+msgstr "Червоний"
+msgid "Green"
+msgstr "Зелений"
+msgid "Blue"
+msgstr "Синій"
+msgid "Light Blue"
+msgstr "Блакитний"
+msgid "Black"
+msgstr "Чорний"
+msgid "Grey"
+msgstr "Сірий"
+msgid "White"
+msgstr "Білий"
+msgid "Pink"
+msgstr "Рожевий"
+msgid "Yellow"
+msgstr "Жовтий"
+msgid "Violet"
+msgstr "Фіолетовий"
+msgid "Brown"
+msgstr "Коричневий"
+
+msgid "ShoesSize"
+msgstr "Розмір взуття"
+msgid "Age"
+msgstr "Вік"
+
+#: defaults.py:225
+msgid "Order Email Subject"
+msgstr "Тема листа замовлення"
+
+#: defaults.py:226
+msgid "Subject to be used when sending the order receipt email."
+msgstr ""
+
+#: defaults.py:228
+msgid "Order Receipt"
+msgstr ""
+
+#: defaults.py:233
+msgid "From Email"
+msgstr "Email відправника"
+
+#: defaults.py:234
+msgid "Email address from which order receipts should be emailed."
+msgstr ""
+
+#: defaults.py:245
+msgid "Unprocessed"
+msgstr "Не оброблений"
+
+#: defaults.py:246
+msgid "Processed"
+msgstr "Оброблений"
+
+#: defaults.py:252
+msgid "Products Per Category Page"
+msgstr "Товарів на сторінку категорії"
+
+#: defaults.py:253
+msgid "Number of products to display per category page."
+msgstr ""
+
+#: defaults.py:264
+msgid "Recently added"
+msgstr "По даті додавання"
+
+#: defaults.py:265
+msgid "Highest rated"
+msgstr "За рейтингом"
+
+#: defaults.py:266
+msgid "Least expensive"
+msgstr "Від дешевих до дорогих"
+
+#: defaults.py:267
+msgid "Most expensive"
+msgstr "Від дорогих до дешевих"
+
+#: defaults.py:273
+msgid "Use product variations"
+msgstr ""
+
+#: defaults.py:281
+#, fuzzy
+msgid "Use product ratings"
+msgstr "Параметри товару"
+
+#: fields.py:56 management/commands/product_db.py:33
+msgid "SKU"
+msgstr "Артикул"
+
+#: forms.py:26 templates/shop/product.html:83
+msgid "The selected options are currently unavailable."
+msgstr "Вибрані опції зараз недоступні."
+
+#: forms.py:27
+msgid "The selected options are currently not in stock."
+msgstr "Вибраних опцій зараз немає в наявності."
+
+#: forms.py:28
+msgid "The selected quantity is currently unavailable."
+msgstr "Задана кількість недоступна."
+
+#: forms.py:38 models.py:619 templates/shop/order_history.html:20
+msgid "Quantity"
+msgstr "Кількість"
+
+#: forms.py:258
+msgid "The discount code entered is invalid."
+msgstr "Введений неправильний код знижки."
+
+#: forms.py:270 models.py:822
+msgid "Free shipping"
+msgstr "Безкоштовна доставка"
+
+#: forms.py:285
+msgid "My delivery details are the same as my billing details"
+msgstr "Інформація про доставку така ж як і про оплату"
+
+#: forms.py:287
+msgid "Remember my address for next time"
+msgstr "Запамятати мою адресу на майбутнє"
+
+#: forms.py:288
+msgid "Cardholder name"
+msgstr "Власник карти"
+
+#: forms.py:289
+msgid "Card type"
+msgstr ""
+
+#: forms.py:292
+#, fuzzy
+msgid "Card number"
+msgstr "Номер карти"
+
+#: forms.py:297
+msgid "CCV"
+msgstr ""
+
+#: forms.py:297
+msgid ""
+"A security code, usually the last 3 digits found on the back of your card."
+msgstr ""
+
+#: forms.py:396
+msgid "A valid expiry date is required."
+msgstr ""
+
+#: forms.py:504
+msgid "Only one variation can be checked as the default."
+msgstr "Тільки одна варіація може бути встановлена по замовчуванню."
+
+#: forms.py:517
+msgid "Please enter a value for only one type of reduction."
+msgstr ""
+
+#: models.py:40 models.py:620
+msgid "Unit price"
+msgstr "Ціна за штуку"
+
+#: models.py:42
+msgid "Sale price"
+msgstr "Ціна на розпродажі"
+
+#: models.py:43
+msgid "Sale start"
+msgstr "Початок розпродажу"
+
+#: models.py:44
+msgid "Sale end"
+msgstr "Кінець розпродажу"
+
+#: models.py:46
+msgid "Number in stock"
+msgstr "Кількість в магазині"
+
+#: models.py:96
+msgid "Available for purchase"
+msgstr "Доступний для замовлення"
+
+#: models.py:98 models.py:154 models.py:160 models.py:214
+#: management/commands/product_db.py:34
+msgid "Image"
+msgstr "Зображення"
+
+#: models.py:100 models.py:333
+msgid "Product categories"
+msgstr "Категорії товарів"
+
+#: models.py:101
+msgid "Date added"
+msgstr "Дата додавання"
+
+#: models.py:104
+msgid "Related products"
+msgstr "Схожі товари"
+
+#: models.py:106
+msgid "Upsell products"
+msgstr ""
+
+#: models.py:107
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: models.py:114
+msgid "Product"
+msgstr "Товар"
+
+#: models.py:115 models.py:317 models.py:689
+msgid "Products"
+msgstr "Товари"
+
+#: models.py:161
+msgid "Images"
+msgstr "Зображення"
+
+#: models.py:177
+msgid "Type"
+msgstr "Тип"
+
+#: models.py:179
+msgid "Name"
+msgstr "Ім'я"
+
+#: models.py:187
+msgid "Product option"
+msgstr "Параметр товару"
+
+#: models.py:188 models.py:320
+msgid "Product options"
+msgstr "Параметри товару"
+
+#: models.py:213
+msgid "Default"
+msgstr "По замовчуванню"
+
+#: models.py:313
+msgid "Featured Image"
+msgstr "Рекомендовані зображення"
+
+#: models.py:322 models.py:725
+msgid "Sale"
+msgstr "Розпродаж"
+
+#: models.py:324
+msgid "Minimum price"
+msgstr "Мінімальна ціна"
+
+#: models.py:325
+msgid "Maximum price"
+msgstr "Максимальна ціна"
+
+#: models.py:326
+msgid "Combined"
+msgstr "Комбіновані"
+
+#: models.py:327
+msgid ""
+"If checked, products must match all specified filters, otherwise products "
+"can match any specified filter."
+msgstr ""
+
+#: models.py:332
+msgid "Product category"
+msgstr "Категорія товарів"
+
+#: models.py:386 models.py:395
+msgid "First name"
+msgstr "Ім'я"
+
+#: models.py:387 models.py:396
+msgid "Last name"
+msgstr "Прізвище"
+
+#: models.py:388 models.py:397
+msgid "Street"
+msgstr "Вулиця"
+
+#: models.py:389 models.py:398
+msgid "City/Suburb"
+msgstr "Місто"
+
+#: models.py:390 models.py:399
+msgid "State/Region"
+msgstr "Область"
+
+#: models.py:391 models.py:400
+msgid "Zip/Postcode"
+msgstr "Поштовий індекс"
+
+#: models.py:392 models.py:401
+msgid "Country"
+msgstr "Країна"
+
+#: models.py:393 models.py:402
+msgid "Phone"
+msgstr "Телефон"
+
+#: models.py:394
+msgid "Email"
+msgstr "Електронна адреса"
+
+#: models.py:403
+msgid "Additional instructions"
+msgstr "Додаткова інформація"
+
+#: models.py:405
+msgid "Time"
+msgstr "Час"
+
+#: models.py:408
+msgid "Shipping type"
+msgstr "Тип доставки"
+
+#: models.py:409
+msgid "Shipping total"
+msgstr "Вартість доставки"
+
+#: models.py:410
+msgid "Tax type"
+msgstr ""
+
+#: models.py:411
+#, fuzzy
+msgid "Tax total"
+msgstr "Всього"
+
+#: models.py:412
+msgid "Item total"
+msgstr "Вартість товару"
+
+#: models.py:413 models.py:844
+msgid "Discount code"
+msgstr "Код знижки"
+
+#: models.py:414
+msgid "Discount total"
+msgstr "Сума знижки"
+
+#: models.py:415
+msgid "Order total"
+msgstr "Всього по замовленню"
+
+#: models.py:416
+msgid "Transaction ID"
+msgstr "ID транзакції"
+
+#: models.py:431
+msgctxt "commercial meaning"
+msgid "Order"
+msgstr "Замовлення"
+
+#: models.py:432
+msgctxt "commercial meaning"
+msgid "Orders"
+msgstr "Замовлення"
+
+#: models.py:517 templates/admin/shop/order/change_form.html:7
+#: templates/shop/complete.html:80
+msgid "Download PDF invoice"
+msgstr "Завантажити рахунок в PDF"
+
+#: models.py:525
+msgid "Last updated"
+msgstr "Останні зміни"
+
+#: models.py:621
+msgid "Total price"
+msgstr "Всього"
+
+#: models.py:687
+msgid "Active"
+msgstr "Активний"
+
+#: models.py:692
+msgid "Categories"
+msgstr "Категорії"
+
+#: models.py:693
+msgid "Reduce by amount"
+msgstr "Зниження на відповідну величину"
+
+#: models.py:694
+msgid "Reduce by percent"
+msgstr "Зниження на процент"
+
+#: models.py:697
+msgid "Reduce to amount"
+msgstr "Зниження до відповідної величини"
+
+#: models.py:698
+msgid "Valid from"
+msgstr "Діє з"
+
+#: models.py:699
+msgid "Valid to"
+msgstr "Діє до"
+
+#: models.py:726
+msgid "Sales"
+msgstr "Розпродажі"
+
+#: models.py:820
+msgid "Code"
+msgstr "Код"
+
+#: models.py:821
+msgid "Minimum total purchase"
+msgstr "Мінімальна сума замовлення"
+
+#: models.py:823
+msgid "Uses remaining"
+msgstr ""
+
+#: models.py:824
+msgid ""
+"If you wish to limit the number of times a code may be used, set this value. "
+"It will be decremented upon each use."
+msgstr ""
+
+#: models.py:845
+msgid "Discount codes"
+msgstr "Коди знижок"
+
+#: utils.py:111
+#, python-format
+msgid ""
+"Invalid currency locale specified for SHOP_CURRENCY_LOCALE: '%s'. You'll "
+"need to set the locale for your system, or configure the "
+"SHOP_CURRENCY_LOCALE setting in your settings module."
+msgstr ""
+
+msgid "Cart"
+msgstr "Корзина"
+
+#: views.py:60 views.py:102
+msgid "Item added to cart"
+msgstr "Товар доданий в корзину"
+
+#: views.py:67
+msgid "Item added to wishlist"
+msgstr "Товар доданий в список бажань"
+
+#: views.py:107
+msgid "Item removed from wishlist"
+msgstr "Товар видалений з списка бажань"
+
+#: views.py:144
+msgid "Your cart has expired"
+msgstr "Ваша корзина пуста."
+
+#: views.py:152
+msgid "Cart updated"
+msgstr "Товар доданий в корзину"
+
+#: management/commands/product_db.py:35
+msgid "Category"
+msgstr "Категорія"
+
+#: management/commands/product_db.py:36
+msgid "Sub-Category"
+msgstr "Підкатегорія"
+
+#: management/commands/product_db.py:38
+msgid "Number in Stock"
+msgstr "В наявності"
+
+#: management/commands/product_db.py:39 templates/shop/cart.html:23
+#: templates/shop/includes/order_details.html:40
+#: templates/shop/includes/order_details_rtl.html:44
+msgid "Unit Price"
+msgstr "Ціна"
+
+#: management/commands/product_db.py:40
+msgid "Sale Price"
+msgstr "Ціна на розпродажі"
+
+#: management/commands/product_db.py:41
+msgid "Sale Start Date"
+msgstr "Початок розпродажу"
+
+#: management/commands/product_db.py:42
+msgid "Sale Start Time"
+msgstr "Час початку розпродажу"
+
+#: management/commands/product_db.py:43
+msgid "Sale End Date"
+msgstr "Дата закінчення розпродажу"
+
+#: management/commands/product_db.py:44
+msgid "Sale End Time"
+msgstr "Час закінчення розпродажу"
+
+#: management/commands/product_db.py:47
+msgid "product"
+msgstr "товар"
+
+#: management/commands/product_db.py:64
+msgid "Import/Export products from a csv file."
+msgstr "Імпорт/Експорт товарів з CSV файла."
+
+#: management/commands/product_db.py:71
+msgid "Import products from csv file."
+msgstr "Імпортувати товари з CSV файла."
+
+#: management/commands/product_db.py:76
+msgid "Export products from csv file."
+msgstr "Экспортувати товари з CSV файла."
+
+#: management/commands/product_db.py:83
+msgid "Please provide csv file to import"
+msgstr "Будь ласка, надайте CSV файл для імпорту"
+
+#: management/commands/product_db.py:87
+msgid "need to import or export"
+msgstr "потрібно імпортувати чи експортувати"
+
+#: management/commands/product_db.py:138
+msgid "Importing .."
+msgstr "Імпорт .."
+
+#: management/commands/product_db.py:186
+msgid "Exporting .."
+msgstr "Експорт .."
+
+#: payment/egate.py:52 payment/stripe_api.py:45
+msgid "A general error occured: "
+msgstr "Виникла помилка: "
+
+#: payment/egate.py:55
+msgid "Transaction declined: "
+msgstr "Транзакція відмінена: "
+
+#: payment/stripe_api.py:43
+#, fuzzy
+msgid "Transaction declined"
+msgstr "Транзакція відмінена: "
+
+#: templates/accounts/account_profile_update.html:6
+msgid "View past orders"
+msgstr "Переглянути попередні замовлення"
+
+#: templates/admin/shop/order/change_form.html:8
+msgid "History"
+msgstr "Історія"
+
+#: templates/email/order_receipt.txt:5 templates/email/receipt.html:3
+#: templates/email/receipt_rtl.html:3
+msgid "Dear"
+msgstr "Шановний"
+
+#: templates/email/order_receipt.txt:7 templates/email/receipt.html:4
+#: templates/email/receipt_rtl.html:4
+msgid "Your order has been successful, details are below."
+msgstr "Ваше замовлення успішно додане, деталі вказані нижче."
+
+#: templates/email/order_receipt.txt:9
+#: templates/shop/includes/order_details.html:7
+#: templates/shop/includes/order_details_rtl.html:8
+msgid "Order ID:"
+msgstr "Номер замовлення:"
+
+#: templates/email/order_receipt.txt:11
+msgid "Billing Details:"
+msgstr "Деталі оплати"
+
+#: templates/email/order_receipt.txt:16
+msgid "Shipping Details:"
+msgstr "Деталі доставки"
+
+#: templates/email/order_receipt.txt:21
+msgid "Items Ordered:"
+msgstr "Замовлені товари:"
+
+#: templates/email/order_receipt.txt:23
+msgid "each"
+msgstr "кожний"
+
+#: templates/includes/user_panel.html:5
+#, python-format
+msgid "1 item"
+msgid_plural "%(cart_quantity)s items"
+msgstr[0] "%(cart_quantity)s товар"
+msgstr[1] "%(cart_quantity)s товарів"
+msgstr[2] "%(cart_quantity)s товарів"
+
+#: templates/includes/user_panel.html:6
+msgid "in cart"
+msgstr "в корзині"
+
+#: templates/includes/user_panel.html:10 templates/shop/cart.html:57
+#, fuzzy
+msgid "Return to Checkout"
+msgstr "Повернутись до оплати"
+
+#: templates/includes/user_panel.html:10 templates/shop/cart.html:57
+msgid "Go to Checkout"
+msgstr "Перейти до оплати"
+
+#: templates/includes/user_panel.html:14
+#, python-format
+msgid "Wishlist contains 1 item"
+msgid_plural " Wishlist contains %(wishlist_count)s items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: templates/pages/category.html:38
+msgid "Sort by"
+msgstr "Сортувати"
+
+#: templates/pages/category.html:64 templates/shop/product.html:78
+msgid "On sale:"
+msgstr "На розпродажі:"
+
+#: templates/pages/category.html:68
+msgid "Coming soon"
+msgstr "Товар очікується"
+
+#: templates/shop/billing_shipping.html:17
+#, python-format
+msgid ""
+"\n"
+"If you have an existing account or would like to create one, please\n"
+"<a href=\"%(login_url)s?next=%(next)s\">log in</a> or\n"
+"<a href=\"%(signup_url)s?next=%(next)s\">sign up</a>.\n"
+msgstr ""
+
+#: templates/shop/billing_shipping.html:28 templates/shop/confirmation.html:8
+#: templates/shop/includes/order_details.html:15
+#: templates/shop/includes/order_details_rtl.html:15
+msgid "Billing Details"
+msgstr "Платіжна інформація"
+
+#: templates/shop/billing_shipping.html:33
+msgid "Delivery Details"
+msgstr "Інформація про доставку"
+
+#: templates/shop/cart.html:4 templates/shop/cart.html.py:5
+#: templates/shop/cart.html:9
+msgid "Your Cart"
+msgstr "Корзина"
+
+#: templates/shop/cart.html:22 templates/shop/includes/order_details.html:39
+#: templates/shop/includes/order_details_rtl.html:45
+msgid "Item"
+msgstr "Товар"
+
+#: templates/shop/cart.html:24 templates/shop/includes/order_details.html:41
+#: templates/shop/includes/order_details_rtl.html:43
+msgid "Qty"
+msgstr "К-сть"
+
+#: templates/shop/cart.html:25 templates/shop/includes/order_details.html:42
+#: templates/shop/includes/order_details_rtl.html:42
+msgid "Price"
+msgstr "Ціна"
+
+#: templates/shop/cart.html:26
+msgid "Remove?"
+msgstr "Видалити?"
+
+#: templates/shop/cart.html:59
+msgid "Update Cart"
+msgstr "Оновити корзину"
+
+#: templates/shop/cart.html:67
+msgid "Apply"
+msgstr "Застосувати"
+
+#: templates/shop/cart.html:73
+msgid "You may also like:"
+msgstr "Вам теж може сподобатись:"
+
+#: templates/shop/cart.html:98
+msgid "Your Cart is empty."
+msgstr "Ваша корзина пуста."
+
+#: templates/shop/checkout.html:4 templates/shop/checkout.html.py:5
+msgid "Checkout"
+msgstr "Оплата"
+
+#: templates/shop/checkout.html:5
+msgid "Step"
+msgstr "Крок"
+
+#: templates/shop/checkout.html:26 templates/shop/complete.html:70
+msgid "Complete"
+msgstr "Завершено"
+
+#: templates/shop/checkout.html:48
+msgid "Edit Cart"
+msgstr "Редагувати корзину"
+
+#: templates/shop/checkout.html:61
+msgid "Please correct the errors below."
+msgstr "Будь ласка, виправте наступні помилки"
+
+#: templates/shop/checkout.html:73
+msgid "Next"
+msgstr "Далі"
+
+#: templates/shop/checkout.html:75
+msgid "Back"
+msgstr "Назад"
+
+#: templates/shop/checkout.html:80
+msgid "Your cart is empty."
+msgstr "Ваша корзина пуста."
+
+#: templates/shop/checkout.html:81
+msgid ""
+"This may be due to your session timing out after a period of inactivity."
+msgstr ""
+
+#: templates/shop/checkout.html:82
+msgid "We apologize for the inconvenience."
+msgstr ""
+
+#: templates/shop/checkout.html:84 templates/shop/wishlist.html:40
+msgid "Continue Shopping"
+msgstr "Продовжити покупки"
+
+#: templates/shop/complete.html:4 templates/shop/complete.html.py:61
+msgid "Order Complete"
+msgstr "Заказ завершений"
+
+#: templates/shop/complete.html:75
+msgid "Thank you for shopping with us, your order is complete."
+msgstr ""
+
+#: templates/shop/complete.html:76
+msgid "We've sent you a receipt via email."
+msgstr ""
+
+#: templates/shop/complete.html:77
+msgid "You can also view your invoice using one of the links below."
+msgstr ""
+
+#: templates/shop/complete.html:81
+msgid "View invoice in your browser"
+msgstr "Переглянути рахунок в браузері"
+
+#: templates/shop/confirmation.html:17
+#: templates/shop/includes/order_details.html:16
+#: templates/shop/includes/order_details_rtl.html:16
+msgid "Shipping Details"
+msgstr "Інформація про доставку"
+
+#: templates/shop/order_history.html:4 templates/shop/order_history.html:5
+#: templates/shop/order_history.html:9
+msgid "Order History"
+msgstr "Історія замовлень"
+
+#: templates/shop/order_history.html:19
+msgid "Date / time"
+msgstr "Дата / час"
+
+#: templates/shop/order_history.html:21
+msgid "Paid"
+msgstr "Оплачено"
+
+#: templates/shop/order_history.html:32
+msgid "Download PDF"
+msgstr "Скачати PDF"
+
+#: templates/shop/order_history.html:33
+msgid "View invoice"
+msgstr "Переглянути рахунок"
+
+#: templates/shop/order_history.html:41
+msgid "You have not ordered anything from us yet."
+msgstr "Ви ще нічого не замовили."
+
+#: templates/shop/product.html:94 templates/shop/wishlist.html:30
+msgid "Buy"
+msgstr "Купити"
+
+#: templates/shop/product.html:95
+msgid "Save for later"
+msgstr "Додати в список бажань"
+
+#: templates/shop/product.html:100
+msgid "This product is currently unavailable."
+msgstr "Недоступний зараз."
+
+#: templates/shop/product.html:108
+msgid "Related Products"
+msgstr "Пов'язані товари"
+
+#: templates/shop/wishlist.html:4 templates/shop/wishlist.html.py:5
+#: templates/shop/wishlist.html:9
+msgid "Your Wishlist"
+msgstr "Ваш список бажань"
+
+#: templates/shop/wishlist.html:31
+msgid "Remove"
+msgstr "Видалити"
+
+#: templates/shop/wishlist.html:38
+msgid "Your wishlist is empty."
+msgstr "Ваш список бажань пустий."
+
+#: templates/shop/includes/order_details.html:12
+#: templates/shop/includes/order_details_rtl.html:12
+msgid "Your Details"
+msgstr "Деталі"
+
+#: templates/shop/includes/order_details.html:36
+#: templates/shop/includes/order_details_rtl.html:36
+msgid "Items Ordered"
+msgstr "Заказанные товары"
+
+#: templates/shop/includes/order_totals.html:4
+#: templates/shop/includes/order_totals.txt:2
+msgid "Sub total"
+msgstr "Всього"
+
+#: templates/shop/includes/order_totals.html:12
+#: templates/shop/includes/order_totals.txt:4
+msgid "Discount"
+msgstr "Скидка"
+
+#: templates/shop/includes/order_totals.html:23
+#: templates/shop/includes/order_totals.txt:6
+msgid "Shipping"
+msgstr "Доставка"
+
+#: templates/shop/includes/order_totals.html:39
+#: templates/shop/includes/order_totals.txt:9
+msgid "Total"
+msgstr "Всього"
+
+#: templates/shop/includes/payment_fields.html:3
+msgid "Payment Details"
+msgstr "Платіжна інформація"
+
+#: templates/shop/includes/payment_fields.html:8
+msgid "Card Expiry"
+msgstr ""
