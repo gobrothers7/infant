@@ -469,7 +469,7 @@ float the buttons inside it. This prevents collapsing. */
   .navbar-nav > li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
-}
+}/*
 .tree {display:none;}
 @media (min-width: 992px) {
   .tree {display:block;}

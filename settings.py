@@ -195,7 +195,7 @@ _ = lambda s: s
 LANGUAGES = (
 #   ('en', _('English')),
 #   ('ru-RU', _('Russian')),
-#	('ua', _('Ukrainian')),
+#   ('ua', _('Ukrainian')),
     ('uk', _('Ukrainian')),
 )
 

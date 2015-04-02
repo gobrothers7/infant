@@ -2622,6 +2622,13 @@ a {
 		margin: auto;
 	}
 }
+/* Display dropdowns on hover only in desktops (md and lg classes) */
+@media (min-width: 768px) {
+  .navbar-nav > li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+    top: auto;
+  }
+}/*
 .discount {
 	background: #eb5e58; /* old browser */
 }
